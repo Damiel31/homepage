@@ -12,8 +12,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #0081b454;
+    --text-decoration-color: #0081B4;
 }
 
 .container {
@@ -26,6 +26,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .fv {
@@ -65,6 +67,17 @@ body {
 
     .experiences {
         margin-right: 0;
+    }
+
+    .skills-info__block__socials {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .skills-info__block__socials .skills-info__block__skills:not(:last-child)  {
+        margin-right: 30px !important;
+    
     }
 }
 
@@ -131,13 +144,42 @@ body {
     border-color: var(--text-decoration-color);
 }
 
+.contact-info__block__socials {
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact-info__block__socials a:not(:last-child)  {
+    margin-right: 20px;
+
+}
+
+.bi-linkedin:hover{
+    fill: #0081B4;
+}
+
+.bi-facebook:hover{
+    fill: #0081B4;
+}
+
+.bi-instagram:hover{
+    fill: #0081B4;
+}
+
 .intro {
     display: flex;
     justify-content: start;
 }
 
-.intro__icon-wrapper {
+.intro__icon-wrapper__right {
     margin-right: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+.intro__icon-wrapper__left {
+    margin-left: 30px;
     width: 30px;
     display: flex;
     justify-content: center;
@@ -154,18 +196,30 @@ body {
 
 .intro_text {
     color: var(--secondary-text-color);
-    text-align: justify;
+    text-align: center;
 }
 
 .skills__header {
     color: var(--secondary-text-color);
     text-align: center;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .skills__text {
     color: var(--secondary-text-color);
     text-align: justify;
+}
+
+.skills-info__block__socials {
+    display: flex;
+    justify-content: center;
+
+}
+
+.skills-info__block__socials .skills-info__block__skills:not(:last-child)  {
+    margin-right: 50px;
+
 }
 
 .experiences {
@@ -249,7 +303,7 @@ body {
 }
 
 .additional-info__languages {
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .additional-info__languages-header {
